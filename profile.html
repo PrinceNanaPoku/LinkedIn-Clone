@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"> 
+    <title>LinkedIn-Clone</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="linkedIn_clone.html" class="logo"><img src="images/logo.png"></a>
+        <div class="search-box">
+          <img src="images/search.png">
+          <input type="text" placeholder="Search">
+        </div>
+      </div>
+      <div class="nav-center">
+        <ul>
+          <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+          <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+          <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+          <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+          <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="online">
+          <img src="images/user-1.png" onclick="toggleMenu()">
+        </div>
+       
+      </div>
+      <!----------------------------------Dropdown Profile Menu---------------------------->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/user-1.png">
+            <div>
+              <h3>Anthony Green</h3>
+              <a href="#">See your Profile</a>
+          </div>
+          </div>
+          <hr>
+          <a href="#" class="profile-menu-links">
+            <img src="images/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-links">
+            <img src="images/setting.png">
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-links">
+            <img src="images/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-links">
+            <img src="images/display.png">
+            <p>Display & Accessibility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-links">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!---------------------------End of nav bar-------------------------------------------->
+    <div class="container">
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="images/cover-pic.png" width="100%">
+          <div class="profile-container-inner">
+            <img src="images/user-1.png" class="profile-pic">
+            <h3>Anthony Green</h3>
+            <b>Web Developer at Microsoft | Former Developer at DataStack | Intern as Oracle</b>
+            <p>San Francisco, United States &middot; <a href="#">Contact Info</a></p> 
+            <div class="mutual">
+              <img src="images/user-2.png">
+              <span>1 mutual connection: Ben South</span>
+            </div>
+            <div class="profile-btn">
+              <a href="#" class="first-img"><img src="images/connect.png">Connect</a>
+              <a href="#"><img src="images/chat.png">Message</a>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h3>About</h3>
+          <p>The success of a website depends on search engine optimization and digital marketing strategy. If you are on the first page of all major search engines, then you are ahead of your competitors</p>
+          <a href="#" class="see-more-link">See More...</a>
+        </div>
+        <div class="profile-description">
+          <h3>Experience</h3>
+          <div class="profile-desc-row">
+            <img src="images/microsoft.png">
+            <div>
+              <h3>Lead Front-End Developer</h3>
+              <b>Microsoft &middot; Full-Time</b>
+              <span>Feb 2021 - Present &middot; 2yr 8mth</span>
+              <p>Computer programming is the process of performing a particular computation, usually by designing and building an executable computer program.</p>
+              <hr>
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/slack.png">
+            <div>
+              <h3>Full Stack Developer</h3>
+              <b>DataStack &middot; Full-Time</b>
+              <span>June 2019 - Feb 2021 &middot; 1yr 8 mth</span>
+              <p>Computer programming is the process of performing a particular computation, usually by designing and building an executable computer program.</p>
+              <hr>
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/google.png">
+            <div>
+              <h3>Web Developer</h3>
+              <b>Google &middot; Full-Time</b>
+              <span>March 2018 - March 2019 &middot; 1yr </span>
+              <p>Computer programming is the process of performing a particular computation, usually by designing and building an executable computer program.</p>
+              <hr>
+            </div>
+          </div>
+          <a href="#" class="experience-link">Show all 7 experiences <img src="images/right-arrow.png"></a>
+        </div>
+        <div class="profile-description">
+          <h3>Education</h3>
+          <div class="profile-desc-row">
+            <img src="images/stanford.png" class="second-img">
+            <div class="line">
+              <h3>Stanford</h3>
+              <b>B.Sc Computer Science</b>
+              <span>2014 - 2018</span>
+              <hr>  
+            </div>
+      </div>
+      <div class="profile-desc-row">
+        <img src="images/north.png" class="second-img">
+        <div class="line">
+          <h3>NorthWestern University</h3>
+          <b>Electrical Engineering</b>
+          <span>2012 - 2014</span>
+          <hr>  
+        </div>
+     </div>
+     <div class="profile-desc-row">
+      <img src="images/mit.png" class="second-img">
+      <div class="line">
+        <h3>MIT High School</h3>
+        <b>General Science</b>
+        <span>2002 - 2012</span>  
+      </div>
+   </div>
+  </div>
+  <div class="profile-description">
+    <h3>Skills</h3>
+    <a href="#" class="skills-btn">Leadership</a>
+    <a href="#" class="skills-btn">Web Design</a>
+    <a href="#" class="skills-btn">Communication</a>
+    <a href="#" class="skills-btn">UI/UX</a>
+    <a href="#" class="skills-btn">JavaScript</a>
+    <a href="#" class="skills-btn">React</a>
+    <a href="#" class="skills-btn">Java</a>
+    <a href="#" class="skills-btn">Springboot</a>
+   </div>
+   <div class="profile-description">
+    <h3>Languages</h3>
+    <a href="#" class="language-btn">English</a>
+    <a href="#" class="language-btn">German</a>
+    <a href="#" class="language-btn">French</a>
+   </div>
+      </div>
+      
+      <!--------------------------------Profile-Sidebar-------------------------------------->
+      <div class="profile-sidebar">
+        <div class="sidebar-ad">
+          <small>ad &middot; &middot; &middot;</small>
+          <p>Master the 5 principles of web design</p>
+          <div>
+            <img src="images/user-1.png">
+            <img src="images/mi-logo.png">
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="sidebar-people">
+          <h3>People you may know</h3>
+          <div class="sidebar-people-row">
+            <img src="images/user-3.png">
+            <div>
+              <h3>Lana Miles</h3>
+              <p>Marketing Manager at Amazon</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-1.png">
+            <div>
+              <h3>Austin Reaves</h3>
+              <p>Full Stack Developer at TikTok</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-2.png">
+            <div>
+              <h3>William Thompson</h3>
+              <p>Software Engineer at Google Inc</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-4.png">
+            <div>
+              <h3>Leah Arthur</h3>
+              <p>Front End Developer at Amazon</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-5.png">
+            <div>
+              <h3>James Azure</h3>
+              <p>Senior Software Engineer at X</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-footer">
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy</a>
+          <a href="#">Advertisement</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+          <div class="copyright-info">
+            <img src="images/logo.png">
+            <p>LinkedIn &#169; 2023. All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script>
+      let profileMenu = document.getElementById('profileMenu');
+
+      function toggleMenu(){
+        profileMenu.classList.toggle('open-menu');
+      }
+    </script>
+  </body>
+</html>

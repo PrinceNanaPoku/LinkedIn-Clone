@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>LinkedIn-Clone</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="linkedIn_clone.html" class="logo"><img src="images/logo.png"></a>
+        <div class="search-box">
+          <img src="images/search.png">
+          <input type="text" placeholder="Search">
+        </div>
+      </div>
+      <div class="nav-center">
+        <ul>
+          <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+          <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+          <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+          <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+          <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="online">
+          <img src="images/user-1.png" onclick="toggleMenu()">
+        </div>
+       
+      </div>
+      <!----------------------------------Dropdown Profile Menu---------------------------->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/user-1.png">
+            <div>
+              <h3>Anthony Green</h3>
+              <a href="profile.html">See your Profile</a>
+          </div>
+          </div>
+          <hr>
+          <a href="#" class="profile-menu-links">
+            <img src="images/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-links">
+            <img src="images/setting.png">
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-links">
+            <img src="images/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-links">
+            <img src="images/display.png">
+            <p>Display & Accessibility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-links">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!---------------------------End of nav bar-------------------------------------------->
+    <div class="container">
+       <!---------------------------Left-Sidebar-------------------------------------------->   
+      <div class="left-sidebar">
+        <div class="sidebar-user-profile">
+          <img src="images/cover-pic.png" width="100%">
+          <div class="user-profile-info">
+            <img src="images/user-1.png">
+            <h1>Anthony Green</h1>
+            <h3>Web Developer</h3>
+            <ul>
+              <li>Profile views <span>52</span></li>
+              <li>Post views <span>871</span></li>
+              <li>Connections <span>1094</span></li>
+            </ul>
+          </div>
+          <div class="user-profile-links">
+            <a href="#"><img src="images/items.png"><span>Items</span></a>
+            <a href="#"><img src="images/premium.png"><span>Try Premium</span></a>
+          </div>
+        </div>
+        <div class="user-profile-activity" id="sidebar-el">
+          <h3>RECENT</h3>
+          <a href="#"><img src="images/recent.png">Web Development</a>
+          <a href="#"><img src="images/recent.png">User Interface</a>
+          <a href="#"><img src="images/recent.png">Online Learning</a>
+          <a href="#"><img src="images/recent.png">Learn Online</a>
+          <a href="#"><img src="images/recent.png">Code Better</a>
+          <a href="#"><img src="images/recent.png">Group Learning</a>
+          <h3>GROUP</h3>
+          <a href="#"><img src="images/group.png">Web Developers Group</a>
+          <a href="#"><img src="images/group.png">HTML and CSS Learners</a>
+          <a href="#"><img src="images/group.png">JavaScript and Python Group</a>
+          <a href="#"><img src="images/group.png">Learn Coding Online</a>
+          <h3>HASHTAG</h3>
+          <a href="#"><img src="images/hashtag.png">webdevelopment</a>
+          <a href="#"><img src="images/hashtag.png">userinterface</a>
+          <a href="#"><img src="images/hashtag.png">onlinelearning</a>
+          <div class="discover-more">
+            <a href="#">Discover More</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button id="show-more">Hide</button>
+      </div>
+     
+       <!---------------------------Main-Content-------------------------------------------->  
+      <div class="main-content">
+        <div class="main-profile-content">
+          <div class="profile-content">
+            <img src="images/user-1.png">
+            <textarea  rows="5" placeholder="Write a Post"></textarea>
+          </div>
+          <div class="main-profile-links">
+            <li><img src="images/photo.png">Photo</li>
+            <li><img src="images/video.png">Video</li>
+            <li><img src="images/event.png">Event</li>
+            <li>Post</li>
+          </div>
+        </div>
+        <div class="sort-profile">
+          <hr>
+          <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+        </div>
+        <div class="profile-post">
+          <div class="profile-post-author">
+            <img src="images/user-3.png">
+            <div class="profile-post-info">
+              <h1>Lisa Coleman</h1>
+              <small>Founder and CEO of Top Consult | Angel Investor</small>
+              <small>2h ago</small>
+            </div>
+          </div>
+          <p>The success of every website depends on search engine optimization and digital marketing strategy. If you are on the first page of major search engines, then you are ahead of your competitors</p>
+          <img src="images/post-image-1.png" width="100%">
+          <div class="post-stats">
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked">Rachel and 101 others</span>
+            <div>
+              <span class="stats-info">30 comments &middot; 50 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-user-icon">
+              <img src="images/down-arrow.png" class="post-arrow-icon">
+            </div>
+            <div>
+              <img src="images/like.png" class="post-image">
+              <span class="post-index">Like</span>
+            </div>
+            <div>
+              <img src="images/comment.png" class="post-image">
+              <span class="post-index">Comment</span>
+            </div>
+            <div>
+              <img src="images/share.png" class="post-image">
+              <span class="post-index">Share</span>
+            </div>
+            <div>
+              <img src="images/send.png" class="post-image">
+              <span class="post-index">Send</span>
+            </div>
+           
+          </div>
+          
+        </div>
+        <div class="profile-post">
+          <div class="profile-post-author">
+            <img src="images/user-2.png">
+            <div class="profile-post-info">
+              <h1>Ben South</h1>
+              <small>Senior Software Engineer at Google</small>
+              <small>5h ago</small>
+            </div>
+          </div>
+          <p>It is not only good enought to write code. But learn also to communicate and build proper relationships</p>
+          <img src="images/post-image-2.png" width="100%">
+          <div class="post-stats">
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked">Seth and 120 others</span>
+            <div>
+              <span class="stats-info">110 comments &middot; 55 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-user-icon">
+              <img src="images/down-arrow.png" class="post-arrow-icon">
+            </div>
+            <div>
+              <img src="images/like.png" class="post-image">
+              <span class="post-index">Like</span>
+            </div>
+            <div>
+              <img src="images/comment.png" class="post-image">
+              <span class="post-index">Comment</span>
+            </div>
+            <div>
+              <img src="images/share.png" class="post-image">
+              <span class="post-index">Share</span>
+            </div>
+            <div>
+              <img src="images/send.png" class="post-image">
+              <span class="post-index">Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile-post">
+          <div class="profile-post-author">
+            <img src="images/user-4.png">
+            <div class="profile-post-info">
+              <h1>Maria Austin </h1>
+              <small>Front-End Developer at Amazon</small>
+              <small>10h ago</small>
+            </div>
+          </div>
+          <p>Be optimistic, put in that needed effort. It will definitely pay off</p>
+          <img src="images/post-image-3.png" width="100%">
+          <div class="post-stats">
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked">Ben and 105 others</span>
+            <div>
+              <span class="stats-info">56 comments &middot; 20 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-user-icon">
+              <img src="images/down-arrow.png" class="post-arrow-icon">
+            </div>
+            <div>
+              <img src="images/like.png" class="post-image">
+              <span class="post-index">Like</span>
+            </div>
+            <div>
+              <img src="images/comment.png" class="post-image">
+              <span class="post-index">Comment</span>
+            </div>
+            <div>
+              <img src="images/share.png" class="post-image">
+              <span class="post-index">Share</span>
+            </div>
+            <div>
+              <img src="images/send.png" class="post-image">
+              <span class="post-index">Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile-post">
+          <div class="profile-post-author">
+            <img src="images/user-5.png">
+            <div class="profile-post-info">
+              <h1>Kingsley Reaves</h1>
+              <small>Full Stack Developer at Microsoft</small>
+              <small>1day ago</small>
+            </div>
+          </div>
+          <p>Healthy competition at the work place is needed to build and improve skills</p>
+          <img src="images/post-image-4.png" width="100%">
+          <div class="post-stats">
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked">Thomas and 104 others</span>
+            <div>
+              <span class="stats-info">60 comments &middot; 34 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-user-icon">
+              <img src="images/down-arrow.png" class="post-arrow-icon">
+            </div>
+            <div>
+              <img src="images/like.png" class="post-image">
+              <span class="post-index">Like</span>
+            </div>
+            <div>
+              <img src="images/comment.png" class="post-image">
+              <span class="post-index">Comment</span>
+            </div>
+            <div>
+              <img src="images/share.png" class="post-image">
+              <span class="post-index">Share</span>
+            </div>
+            <div>
+              <img src="images/send.png" class="post-image">
+              <span class="post-index">Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!---------------------------Right-Sidebar-------------------------------------------->  
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" class="more-img">
+          <h3>Trending News</h3>
+          <a href="#">High demand for skilled manpower</a>
+          <span>1day ago &middot 3,345 readers</span>
+
+          <a href="#">Careers growing horizontally</a>
+          <span>19h ago &middot 18,475 readers</span>
+
+          <a href="#">Less work visa for US, more for UK</a>
+          <span>1day ago &middot 5,383 readers</span>
+
+          <a href="#">More hiring = higher confidence?</a>
+          <span>18h ago &middot 5,254 readers</span>
+
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+          <small>ad &middot; &middot; &middot;</small>
+          <p>Master the 5 principles of web design</p>
+          <div>
+            <img src="images/user-1.png">
+            <img src="images/mi-logo.png">
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy</a>
+          <a href="#">Advertisement</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+          <div class="copyright-info">
+            <img src="images/logo.png">
+            <p>LinkedIn &#169; 2023. All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
